@@ -1,0 +1,59 @@
+.title {
+  display: flex;
+  align-items: center;
+  .title_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    background: #f0f4fb;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+}
+
+.sql_box {
+  display: flex;
+  flex-direction: column;
+  :global {
+    .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+      background: #f2f3f5;
+    }
+    .ant-select-multiple .ant-select-selection-item {
+      background-color: #fff;
+    }
+  }
+  .textBc {
+    width: 100%;
+    background: #f2f3f5;
+  }
+  .slide {
+    min-height: 666px;
+    padding: 16px 58px 16px 16px;
+    //background-color: #0d5aa7;
+    .table_box {
+      color: #86909c;
+      font-weight: 400;
+      font-size: 12px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      line-height: 17px;
+      //.table_title{
+      //
+      //}
+      //.table_com{
+      //
+      //}
+    }
+  }
+
+  .btns {
+    margin-top: 32px;
+    text-align: right;
+    //background-color: #0d5aa7;
+    .btn {
+      margin-right: 10px;
+    }
+  }
+}

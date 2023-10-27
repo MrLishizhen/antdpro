@@ -14,7 +14,7 @@ export default defineConfig({
   },
   layout: {
     // https://umijs.org/zh-CN/plugins/plugin-layout
-    locale: true,
+    locale: false,
     siderWidth: 208,
     ...defaultSettings,
   },
@@ -66,37 +66,28 @@ export default defineConfig({
       ],
     },
     {
-      name: 'exception',
+      name: '作业开发',
       icon: 'warning',
-      path: '/exception',
+      // path:'/job',
       routes: [
         {
-          path: '/exception',
-          redirect: '/exception/403',
+          name: '作业列表',
+          icon: 'smile',
+          path: '/job',
+          component: './job/index',
         },
         {
-          name: '403',
+          name: 'SQL作业',
+          hideInMenu: true,
           icon: 'smile',
-          path: '/exception/403',
-          component: './exception/403',
-        },
-        {
-          name: '404',
-          icon: 'smile',
-          path: '/exception/404',
-          component: './exception/404',
-        },
-        {
-          name: '500',
-          icon: 'smile',
-          path: '/exception/500',
-          component: './exception/500',
+          path: '/job/sql',
+          component: './job/sql/index',
         },
       ],
     },
     {
       path: '/',
-      redirect: '/dashboard/analysis',
+      redirect: '/job',
     },
     {
       component: '404',

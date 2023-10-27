@@ -1,0 +1,20 @@
+.text_title {
+  position: relative;
+  padding-left: 7px;
+  color: #0d214d;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: PingFangSC-Medium, PingFang SC;
+  line-height: 24px;
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 3px;
+    height: 12px;
+    background-color: #0d214d;
+    transform: translateY(-50%);
+    content: '';
+  }
+}
